@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "751898517514",
+    "firebase_url": "https://craporia-test.firebaseio.com",
+    "project_id": "craporia-test",
+    "storage_bucket": "craporia-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751898517514:android:1694ea95365d0054457ff3",
+        "android_client_info": {
+          "package_name": "com.example.craporia_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751898517514-vseuksm9853d3nvgvm62f746conul1om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrRUYTe-AiIKMkhg7X72D-iDr-tqUBIDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751898517514-vseuksm9853d3nvgvm62f746conul1om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
