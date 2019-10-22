@@ -32,6 +32,8 @@ class _MessagingWidgetState extends State<MessagingWidget> {
           messages.add(Message(
             title: '${notification['title']}',
             body: '${notification['body']}',
+            crap: '${notification['crap']}',
+
           ));
         });
       },
@@ -41,15 +43,28 @@ class _MessagingWidgetState extends State<MessagingWidget> {
     );
     _firebaseMessaging.requestNotificationPermissions(
         const IosNotificationSettings(sound: true, badge: true, alert: true));
+    _firebaseMessaging.getToken().then((token){
+      print("blablablabla"+token);
+    });
   }
 
   @override
   Widget build(BuildContext context) => ListView(
         children: messages.map(buildMessage).toList(),
+        
+        
+        
       );
 
   Widget buildMessage(Message message) => ListTile(
         title: Text(message.title),
+        
+        subtitle: Text(message.body),
+      );
+
+  Widget buildMessage2(Message message) => ListTile(
+        title: Text(message.title),
+        
         subtitle: Text(message.body),
       );
 }
