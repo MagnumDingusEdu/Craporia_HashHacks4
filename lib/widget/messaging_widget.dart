@@ -1,6 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:craporia_test/model/message.dart';
+import 'package:craporia/model/message.dart';
 
 
 class MessagingWidget extends StatefulWidget {
@@ -21,7 +21,7 @@ class _MessagingWidgetState extends State<MessagingWidget> {
         final notification = message['notification'];
         setState(() {
           messages.add(Message(
-              title: notification['title'], body: notification['body']));
+              title: notification['title'], body: notification['body'], crap: null));
         });
       },
       onLaunch: (Map<String, dynamic> message) async {
